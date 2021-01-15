@@ -79,6 +79,7 @@ LDFLAGS_DBG := \
 
 LDFLAGS := \
   -arch x86_64 \
+  -lz \
   -framework Hypervisor \
   -framework vmnet \
   -Wl,-no_compact_unwind \

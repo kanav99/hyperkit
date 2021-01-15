@@ -204,6 +204,19 @@ xh_vm_setup_memory(size_t len, enum vm_mmap_style vms)
 	return (0);
 }
 
+int
+xh_setup_video_memory(uint64_t gpa, size_t len, void **addr)
+{
+    int error;
+
+    assert(len % XHYVE_PAGE_SIZE == 0);
+
+    /* place video memory and mark it non-executable */
+    error = setup_memory_segment(gpa, len, addr);
+
+    return error;
+}
+
 void *
 xh_vm_map_gpa(uint64_t gpa, size_t len)
 {

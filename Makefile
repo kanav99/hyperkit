@@ -38,6 +38,8 @@ HYPERKIT_LIB_SRC := \
 	src/lib/acpitbl.c \
 	src/lib/atkbdc.c \
 	src/lib/block_if.c \
+	src/lib/bhyvegc.c \
+	src/lib/console.c \
 	src/lib/consport.c \
 	src/lib/dbgport.c \
 	src/lib/fwctl.c \
@@ -50,6 +52,7 @@ HYPERKIT_LIB_SRC := \
 	src/lib/mptbl.c \
 	src/lib/pci_ahci.c \
 	src/lib/pci_emul.c \
+	src/lib/pci_fbuf.c \
 	src/lib/pci_hostbridge.c \
 	src/lib/pci_irq.c \
 	src/lib/pci_lpc.c \
@@ -63,11 +66,14 @@ HYPERKIT_LIB_SRC := \
 	src/lib/pci_virtio_sock.c \
 	src/lib/pm.c \
 	src/lib/post.c \
+	src/lib/rfb.c \
 	src/lib/rtc.c \
 	src/lib/smbiostbl.c \
+	src/lib/sockstream.c \
 	src/lib/task_switch.c \
 	src/lib/uart_emul.c \
 	src/lib/virtio.c \
+	src/lib/vga.c \
 	src/lib/xmsr.c
 
 FIRMWARE_LIB_SRC := \
